@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 5px;
+            background-color: rgb(241, 204, 156);
+            width: 25vw;
+            height: 25vh;
+            border-radius: 2px;
+            border: 2px solid violet;
+
+            /*
+
+            transition-property: all; -> makes this color transition to be slightly changes   
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+
+            */
+
+            /*shorthand Notation*/
+            transition: all 2s; /* property,duration */
+            transition: all 2s 3s;  /* property,duration,delay */
+            transition: all 2s linear 1s; /* property,duration,timing-function,delay */
+            transition: width 2s, height 5s; /* Special Property */
+
+        }
+        .container:hover{
+            width: 90vw;
+            height: 90vh;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>

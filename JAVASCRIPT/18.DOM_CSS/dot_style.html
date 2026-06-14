@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fdiv" style="background-color: aqua; padding: 2rem;">
+        First div
+        <p id="fpara" style="background-color: green; padding: 2rem;" >first para</p>
+        <div class="sdiv" style="background-color: orange; padding: 2rem;">
+            Second div
+            <p id="spara" style="background-color: pink; padding: 2rem;">Second para</p>
+        </div>
+    </div>
+
+    <script>
+        //type-1: .style-> only one at a time:
+
+        // let paraElement = document.getElementById("spara")
+        // undefined
+        // paraElement
+        // <p id=​"spara" style=​"background-color:​ pink;​ padding:​ 2rem;​">​Second para​</p>​
+        // console.log(paraElement.style)
+        // VM267:1 CSSStyleDeclaration {0: 'background-color', 1: 'padding-top', 2: 'padding-right', 3: 'padding-bottom', 4: 'padding-left', accentColor: '', additiveSymbols: '', alignContent: '', alignItems: '', alignSelf: '', …}
+        // undefined
+        // paraElement.style.backgroundColor='blue';
+        // 'blue'
+        // paraElement.style.color='white'
+        // 'white'
+
+        //type-2: .CssText -> can do multiple at a time works like styling in inline styling...
+        //Note: if we are dealing with this style the original style will be gone off and the changed in js will be displayed
+        
+        // secondElement = document.getElementById('sdiv')
+        // <div style=​"background-color:​ orange;​ padding:​ 2rem;​" id=​"sdiv">​…​</div>​
+        // secondElement.style.cssText;
+        // 'background-color: orange; padding: 2rem;'
+        // secondElement.style.cssText = "background-color:black; color:white;padding:0.5rem"
+        // 'background-color:black; color:white;padding:0.5rem'
+
+        //type-3: setAttribute(): -> Modification/Changing of classname or id -> we use this type
+
+        // let firstdoc = document.getElementById('fdiv')
+        // undefined
+        // firstdoc
+        // <div id=​"fdiv" style=​"background-color:​ aqua;​ padding:​ 2rem;​">​…​</div>​
+        // firstdoc.setAttribute
+        // ƒ setAttribute() { [native code] }
+        // firstdoc.setAttribute('class','firstdiv')
+        // undefined
+        // firstdoc
+        // <div id=​"fdiv" style=​"background-color:​ aqua;​ padding:​ 2rem;​" class=​"firstdiv">​…​</div>​
+
+        // let firstElement = document.querySelector('#fdiv')
+        // undefined
+        // firstElement
+        // <div id=​"fdiv" style=​"background-color:​ aqua;​ padding:​ 2rem;​">​…​</div>​
+        // firstElement.setAttribute('style','padding:5rem');
+        // undefined
+        // firstElement.setAttribute('style','padding:2rem');
+        // undefined
+
+        //type-4: className ->inserting a class or inserting a multiple classes can be done here..
+
+        // let fpara = $0
+        // undefined
+        // fpara
+        // <p id=​"fpara" style=​"background-color:​ green;​ padding:​ 2rem;​">​first para​</p>​
+        // fpara.className
+        // ''
+        // fpara.className = "Sami Sami1"
+        // 'Sami Sami1'
+
+
+
+    </script>
+</body>
+</html>

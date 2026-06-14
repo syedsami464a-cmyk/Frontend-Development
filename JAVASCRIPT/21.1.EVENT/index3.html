@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Here</button>
+</body>
+<script>
+    let btn = document.getElementById("btn");
+
+    // addEventListener("click",function(){
+    //     console.log("Button Clicked!"); // Button Clicked!
+    // })
+
+    addEventListener("click",function(event){
+        console.log(event); /*PointerEvent {isTrusted: true, pointerId: 3, width: 1, height: 1, pressure: 0, …}*/
+        console.log(event.type); /*click*/
+    })
+</script>
+</html>

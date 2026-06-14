@@ -1,0 +1,123 @@
+<!-- bbox = border box and cbox = content box-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bbox Vs Cbox</title>
+    <style>
+        
+        .p1{
+            width: 100px;
+            height: 100px;
+            padding: 50px;
+            border: 10px solid maroon;
+            margin: 10px;
+        }
+        .p2{
+            width: 100px;
+            height: 100px;
+            padding: 60px;
+            border: 10px solid aqua;
+            margin: 10px;
+            display: inline;
+            /* initially,it is 'block' but by using diplay property i just changed to 'inline' */
+
+        }
+        span{
+            border: 2px solid green;
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            /* display: block; */ 
+            /* like this display using we can change inline to block and vice-versa*/
+        }
+        .spanXVersion{
+            display: inline-block;
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Block elements -> div,p,...-->
+     <!-- Block elements accepts custom height and custom width and we can handle or use anything in it-->
+     <div class="p1">
+        Welcome to samisyed page
+     </div>
+     <div class="p2">
+        Welcome to samisyed page version 2.0
+     </div>
+
+     <!-- Inline Elements -> span,.. -->
+      <!-- Inline doesn't support custon width , height any more , it doesn't work effectively with padding,margin
+       it always comes under same line-->
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    
+
+    <span>
+        This is samisyed
+    </span>
+    <span>
+        This is samisyed 2.O
+    </span>
+    <span>
+        This is samisyed
+    </span>
+    <span>
+        This is samisyed 2.O
+    </span><span>
+        This is samisyed
+    </span>
+    <span>
+        This is samisyed 2.O
+    </span><span>
+        This is samisyed
+    </span>
+    <span>
+        This is samisyed 2.O
+    </span><span>
+        This is samisyed
+    </span>
+    <span>
+        This is samisyed 2.O
+    </span><span>
+        This is samisyed
+    </span>
+    <span>
+        This is samisyed 2.O
+    </span>
+
+
+    <!--Use Inline_block to make it possible to behave like both inline and block-->
+    <!-- we can make span is to be work like both inline and block like that p,div as both work like inline and block...-->
+
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <span class="spanXVersion">
+        this is my page 1
+    </span>
+    <span class="spanXVersion">
+        this is my page 2
+    </span>
+    
+</body>
+</html>

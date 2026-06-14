@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/*ul{
+    list-style-type: none;
+}
+ol{
+    list-style-type: none;
+}
+    */
+.container{
+    /*height: 100vh;
+    width: 100vw;
+    */
+    height: 100%;
+    width: 100%;
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+.head_box{
+    /*height: 7vh;*/
+    min-height: 40px;
+    width: 100vw;
+    border: 2px solid black;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgb(220, 240, 255) 0%, rgba(148, 187, 233, 1) 100%);
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding-right: 1.2rem;
+}
+.unorderlist{
+    display: flex;
+    padding: 2px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 7px;
+}
+.Restaurant_details{
+    display: flex;
+    gap: 3px;
+}
+.detail_options{
+    display: flex;
+    gap: 10px;
+}
+        /*Placing the content in center */
+.contentbox{
+        width: 50%;
+        margin: auto;
+        background-color: pink;
+      /*  border:1px solid black; */
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        padding: 3rem;
+        box-shadow: 0px 0px 10px black;
+}
+
+.item1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.item2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px ;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.rightbox img{
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+.rightbox:hover{
+    transform: scale(1.1);
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(83, 83, 83, 0.707);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+.rightbox .overlay span{
+    color: white;
+    font: 1rem;
+}
+.ingbox{
+    font-size: 1.2rem;
+}
+.recipebox{
+    font-size: 1.2rem;
+}
+
+
+
+.footer_class{
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    font-size: 1.2rem;
+}

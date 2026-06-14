@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { font-size: 16px; } /* 1rem = 16px */
+
+.parent {
+  font-size: 20px; /* parent font size */
+}
+
+.em-text {
+  font-size: 2em; /* 2 × parent (20px) = 40px */
+}
+
+.rem-text {
+    /* rem depends on root element -> html tag*/
+  font-size: 2rem; /* 2 × root (16px) = 32px */
+}
+</style>
+</head>
+<body>
+
+<div class="parent">
+  <p class="em-text">2em → 40px</p>
+  <p class="rem-text">2rem → 32px</p>
+</div>
+
+</body>
+</html>

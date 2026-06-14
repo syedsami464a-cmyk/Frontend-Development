@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            justify-content: end;  /*start,center*/
+            /* makes items to be in start,center,end */
+            /* if you make this flex-direction:column means it makes center in column side*/
+
+            /*
+            flex-direction: column;
+            justify-content: end;
+            */
+            
+        }
+        .container1{
+            height: 50vh;
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+
+            flex-direction: column;
+            justify-content: end; /*start,center*/
+}
+.container2{
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+            align-items: stretch;
+}
+        .box{
+            height: 10vh;
+            width: 10vh;
+            margin: 2px;
+            border: 2px solid yellow;
+        }
+        .boxi{
+            /*height: 10vh;*/
+            width: 10vh;
+            margin: 2px;
+            border: 2px solid yellow;
+        }
+        #box1{
+            background-color: Red;
+        }
+        #box2{
+            background-color: blue;
+
+        }
+        #box3{
+            background-color: green;
+
+        }
+        #box4{
+            background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br>
+    <br>
+    <div class="container1">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br>
+    <br>
+
+</body>
+</html>

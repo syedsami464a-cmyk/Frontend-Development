@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .container{
+            margin: auto;
+            height: 250px;
+            width: 250px;
+            background-color: beige;
+            border: 2px solid black;
+            position: relative;
+            top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s linear 1s;
+            
+            
+
+        }
+
+        .container:hover{
+            /* transform: rotate(360deg); -> used for rotating */ 
+            /*
+            transform: scale(0.5); -> decreases it's size
+            transform: scale(2);   -> increases its size
+            */
+            transform: rotate(-45deg); /* Anti-clock wise direction rotates */
+           
+            /*
+            transform: skew(45deg);  -> enlarges it in clock-wise direction
+            transform: skew(-45deg); -> enlarges it in anti-clock-wise direction
+            */
+
+            transform: translate(500px);         /* moves towards right side ( + x-axis)*/
+            transform: translate(-500px);         /* moves towards left side ( - x-axis)*/
+            transform: translate(0,500px);         /* moves towards top side ( + y-axis)*/
+            transform: translate(0,-500px);         /* moves towards down side ( - y-axis)*/
+            transform: translate(500px , 500px);      /* moves towards z-axis side ( z-axis)*/
+            transform: scaleX(1.5);
+            transform: scaleY(1.5);
+            transform: scaleZ(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Box
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+margin: 10px;
+        }
+        .img2{
+            /* By default position is static*/
+            top: 100;/* No change in this top bcoz of static ness */
+
+            position: relative;
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <img src="Logo1.jpg" alt="Poster1" height="300px" width="200px" class="img1">
+
+        <img src="Logo1.jpg" alt="Poster1" height="300px" width="200px" class="img2">
+        
+        <img src="Logo1.jpg" alt="Poster1" height="300px" width="200px" class="img3">
+        
+        <img src="Logo1.jpg" alt="Poster1" height="300px" width="200px" class="img4">
+
+    </div>
+</body>
+</html>

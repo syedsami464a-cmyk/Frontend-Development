@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextShadow</title>
+    <style>
+        *{
+            --primary-color:black;
+            --custom-width:500px; 
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(230, 230, 143);
+            border: 2px solid var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 350px;
+            width: var(--custom-width);
+            border: 2px solid var(--primary-color);
+            overflow: hidden;
+            padding: 5px;
+            margin: 2px;
+            background-color: rgb(130, 239, 243);
+                    }
+
+
+
+        /*Text Shadow -> is same as box shadow
+                      -> except spread type
+                      -> (x,y,blur,color)
+        */
+
+        #head{
+            text-shadow: 10px 12px 5px pink;
+            text-shadow: pink 10px 12px 5px;
+            text-shadow: pink 12px 13px;
+            text-shadow: 12px 13px;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Box Shadow and custom variable Usage</h1>
+    <div class="container">
+        <div class="box">
+            <img src="Logo.jpg" alt="My logo" height="100px" width="100px">
+            <h1 id="head">Welcome to my bio</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure possimus fugiat delectus soluta suscipit inventore eaque, iste culpa blanditiis optio eius! Saepe nihil alias incidunt architecto. Aperiam voluptatum eius sequi?</p>
+        </div>
+    </div>
+</body>
+</html>

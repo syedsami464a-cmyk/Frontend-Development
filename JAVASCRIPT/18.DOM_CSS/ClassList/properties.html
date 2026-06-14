@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="fdiv" style="background-color: aqua; padding: 2rem;">
+        First div
+        <p id="fpara" style="background-color: green; padding: 2rem;" class="firstpara secondpara" >first para</p>
+        <div class="sdiv" style="background-color: orange; padding: 2rem;">
+            Second div
+            <p id="spara" style="background-color: pink; padding: 2rem;">Second para</p>
+        </div>
+    </div>
+
+    <script>
+
+        // let fpara = document.getElementById('fpara')
+        // undefined
+        // fpara
+        // <p id=​"fpara" style=​"background-color:​ green;​ padding:​ 2rem;​" class=​"firstpara secondpara">​first para​</p>​
+        // fpara.className
+        // 'firstpara secondpara'
+        // fpara.classList
+        // DOMTokenList(2) ['firstpara', 'secondpara', value: 'firstpara secondpara']
+        // fpara.classList.add('third para')
+        // VM1671:1 Uncaught InvalidCharacterError: Failed to execute 'add' on 'DOMTokenList': The token provided ('third para') contains HTML space characters, which are not valid in tokens.
+        //     at <anonymous>:1:17
+        // (anonymous) @ VM1671:1
+        // [NEW] Explain Console errors by using Copilot in Edge: click
+                
+        //         to explain an error. 
+        //         Learn more
+        //         Don't show again
+        // fpara.classList.add('thirdpara')
+        // undefined
+        // fpara
+        // <p id=​"fpara" style=​"background-color:​ green;​ padding:​ 2rem;​" class=​"firstpara secondpara thirdpara">​first para​</p>​
+        // fpara.classList.remove('firstpara')
+        // undefined
+        // fpara
+        // <p id=​"fpara" style=​"background-color:​ green;​ padding:​ 2rem;​" class=​"secondpara thirdpara">​first para​</p>​
+        // fpara.classList
+        // DOMTokenList(2) ['secondpara', 'thirdpara', value: 'secondpara thirdpara']
+        // fpara.classList.toggle('secondpara')
+        // false
+        // fpara
+        // <p id=​"fpara" style=​"background-color:​ green;​ padding:​ 2rem;​" class=​"thirdpara">​first para​</p>​
+        // fpara.classList.toggle('secondpara')
+        // true
+        // fpara
+        // <p id=​"fpara" style=​"background-color:​ green;​ padding:​ 2rem;​" class=​"thirdpara secondpara">​first para​</p>​
+        // fpara.classList.contains('secondpara')
+        // true
+        // fpara.classList.containe('firstpara')
+        // VM2504:1 Uncaught TypeError: fpara.classList.containe is not a function
+        //     at <anonymous>:1:17
+        // (anonymous) @ VM2504:1
+        // fpara.classList.contains('firstpara')
+        // false
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Job Application</h1>
+    <form>
+    <label for="name">Name:</label>
+    <br/>
+    <input type="text" name="name" id="name" placeholder="Enter Employee Name">
+    <br/>
+    <br/>
+    <label for="email">Email:</label>
+    <br/>
+    <input type="email" name="email" id="email" placeholder="xxxxx@gmail.com">
+    <br/>
+    <br/>
+    <label for="password">Password:</label>
+    <br/>
+    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+    <br/>
+    <br/>
+    <label for="Resume">Resume:</label>
+    <br/>
+    <input type="file">
+    <br/>
+    <br/>
+    
+    <label for="options">Experience:</label>
+    <br/>
+    <select name="options" id="options">
+        <option>No Experience</option>
+        <option>1 Year</option>
+        <option>2 Years</option>
+        <option>3 Years</option>
+        <option>4 Years</option>
+    </select>
+    <pre>     [OR]     </pre>
+    <br/>
+    <label for="counter">Experience(in Years):</label>
+    <input type="number" min="0" max="20">
+    <br/>
+    <br/>
+    <fieldset>
+        <legend>Skills:</legend>
+            <input type="checkbox">
+            <label for="cb">HTML</label>
+            <br/>
+            
+            <input type="checkbox">
+            <label for="cb">CSS</label>
+            <br/>
+            
+            <input type="checkbox">
+            <label for="cb">JS</label>
+            <br/>
+            
+            <input type="checkbox">
+            <label for="cb">Enjoy Pandagols</label>
+            
+    </fieldset>
+    <br/>
+    <label for="eduType">Education Type:</label>
+    <select name="eduType" id="eduType">
+        <option value="a">High Level</option>
+        <option value="b">Primary</option>
+        <option value="c">Govt</option>
+        <option value="d">Lower</option>
+    </select>
+    <br/>
+    <fieldset>
+        <legend>Availability</legend>
+            <input type="radio" name="select_type" id="select_type">
+            <label for="select_type">Full-Time</label>
+            <br/>
+            <input type="radio" name="select_type" id="select_type">
+            <label for="select_type">Part-Time</label>
+    </fieldset>
+    <label for="textarea1">Additional Commments:</label>
+    <br/>
+    <textarea name="textarea1" id="textarea1" placeholder="Write Your Comments!!" rows="7px" cols="50px"></textarea>
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>

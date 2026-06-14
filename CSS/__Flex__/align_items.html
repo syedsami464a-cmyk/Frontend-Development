@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+        .container1{
+            height: 30vh;
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            /* it access the cross-axis */
+            /* if flex-direction in row it works on column side
+               if flex-direction in column it works on row side 
+            */
+            align-items: start;
+            
+            
+            
+        }
+        .container2{
+            height: 30vh;
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            
+            
+            
+        }
+        .container3{
+            height: 30vh;
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            align-items: end; 
+            
+            
+        }
+
+
+        .container11{
+            height: 30vh;
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            /* it access the cross-axis */
+            /* if flex-direction in row it works on column side
+               if flex-direction in column it works on row side 
+            */
+            align-items: start;
+            
+            
+            
+        }
+        .container12{
+            height: 30vh;
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+            
+        }
+        .container13{
+            height: 30vh;
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: end;    
+        }
+
+
+            .container21{
+            background-color: maroon;
+            border: 5px solid black;
+            margin: 0;
+            padding: 5px;
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+            align-items: stretch;
+}
+        .boxi{
+            /*height: 10vh;*/
+            width: 10vh;
+            margin: 2px;
+            border: 2px solid yellow;
+        }
+
+
+
+
+        .box{
+            height: 10vh;
+            width: 10vh;
+            margin: 2px;
+            border: 2px solid yellow;
+        }
+        #box1{
+            background-color: Red;
+        }
+        #box2{
+            background-color: blue;
+
+        }
+        #box3{
+            background-color: green;
+
+        }
+        #box4{
+            background-color: yellow;
+
+        }
+   </style>
+<body>
+    <h1> Flex-direction : row</h1>
+    <div class="container1">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+<br>
+<br>
+     <div class="container2">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+<br>
+<br>
+     <div class="container3">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <br>
+    <br>
+
+        <h1> Flex-direction : column</h1>
+    <div class="container11">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+<br>
+<br>
+     <div class="container12">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+<br>
+<br>
+     <div class="container13">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+
+    <h1>For stretch.</h1>
+    <div class="container21">
+        <div class="boxi" id="box1"></div>
+        <div class="boxi" id="box2"></div>
+        <div class="boxi" id="box3"></div>
+        <div class="boxi" id="box4"></div>
+    </div>
+
+
+</body>
+</html>

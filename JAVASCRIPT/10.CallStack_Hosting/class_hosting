@@ -1,0 +1,6 @@
+class Human{
+    hello(){
+    console.log("hello");
+    }
+}
+const ob1 = new Human();

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>animation-fill-mode with Movement</title>
+  <style>
+    @keyframes moveBox {
+      from { transform: translateX(0); background: red; }
+      to   { transform: translateX(200px); background: blue; }
+    }
+
+    .box {
+      width: 80px;
+      height: 80px;
+      margin: 15px;
+      background: gray; 
+      animation: moveBox 3s ease 2s 2 alternate;  
+      /* 3s = duration, 2s = delay, 2 = repeat twice,
+         alternate = forward then backward */
+    }
+
+    .none      { animation-fill-mode: none; }
+    .forwards  { animation-fill-mode: forwards; }
+    .backwards { animation-fill-mode: backwards; }
+    .both      { animation-fill-mode: both; }
+  </style>
+</head>
+<body>
+  <h3>none</h3>
+  <div class="box none"></div>
+
+  <h3>forwards</h3>
+  <div class="box forwards"></div>
+
+  <h3>backwards</h3>
+  <div class="box backwards"></div>
+
+  <h3>both</h3>
+  <div class="box both"></div>
+</body>
+</html>

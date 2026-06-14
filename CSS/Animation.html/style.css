@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: beige;
+    border: 2px solid black;
+    margin:2px;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 2rem;
+    font-weight: 600;
+    font-family:cursive;
+    height: 75px;
+    width: 350px;
+    background-color: rgb(211, 249, 107);
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 5px;
+    position: relative;
+    animation-name: RMovement;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes RMovement{
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 0;
+        left: 1100px;
+    }
+}
+
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    font-size: 2rem;
+    font-weight: 600;
+    font-family:cursive;
+    height: 75px;
+    width: 350px;
+    background-color: rgb(211, 249, 107);
+    border: 2px solid black;
+    border-radius: 40px;
+    margin: 5px;
+    position: relative;
+    animation-name: LMovement;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes LMovement{
+    from {
+        top: 550px;
+        left: 1100px;
+    }
+    to {
+        top: 550px;
+        left: 0;
+    }
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+    border-radius: 50px;
+    background-color: rgb(255, 115, 138);
+    position: relative;
+    top: 150px;
+    left: 600px;
+    animation-name: BallRotation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes BallRotation{
+    0%{
+        top: 1%;
+        left: 20%;
+    }
+    25%{
+        top: 1%;
+        left: 90%;
+    }
+    50%{
+        top:50%;
+        left: 10%;
+    }
+    75%{
+        top: 50%;
+        left: 90%;
+    }
+    100%{
+        top: 1%;
+        left: 20%;
+    }
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 50vh;
+            display: flex;
+            background-color: chocolate;
+            border: 4px solid black;
+            margin: 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 2px;
+            border: 4px solid black;
+
+        }
+        #item1{
+            background-color: antiquewhite;
+            align-self: center;
+        }
+        #item2{
+            background-color: pink;
+            align-self: end;
+        }
+        #item3{
+            background-color: violet;
+            align-self: start;
+        }
+        #item4{
+            background-color: maroon;
+            align-self: flex-end;
+        }
+
+        #item11{
+            background-color: antiquewhite;
+            order: 100;
+        }
+        #item21{
+            background-color: pink;
+        }
+        #item31{
+            background-color: violet;
+        }
+        #item41{
+            background-color: maroon;
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Align-Self -> start,end,center,self-start,self-end</h1>
+    <div class="container">
+        <div class="box" id="item1">box1</div>
+        <div class="box" id="item2">box2</div>
+        <div class="box" id="item3">box3</div>
+        <div class="box" id="item4">box4</div>
+    </div>
+    <br>
+    <br>
+    <h1>Order the boxes using ''order'' keyword</h1>
+    <div class="container">
+        <div class="box" id="item11">box1</div>
+        <div class="box" id="item21">box2</div>
+        <div class="box" id="item31">box3</div>
+        <div class="box" id="item41">box4</div>
+    </div>
+</body>
+</html>

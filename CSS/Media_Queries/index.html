@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_Query</title>
+    <style>
+        .container{
+            height: 250px;
+            width:250px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+         .container1{
+            height: 250px;
+            width:250px;
+            background-color: aquamarine;
+            border: 2px solid black;
+            margin: 2px;
+            padding: 2px;
+        }
+
+        @media (max-width:300px){
+            .container{
+                background-color: maroon;
+            }
+        }
+        @media(min-width:300px){
+            .container1{
+                background-color: maroon;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Max_Width -> Adjusting Box Size
+        <pre>In media condition is to satisfy</pre>
+    </h1>
+    <div class="container">
+        Hello Bro!!
+    </div>
+    <br>
+    <br>
+    <h1>Min_Width -> Adjusting Box Size
+        <pre>In media condition is to satisfy</pre>
+    </h1>
+    <div class="container1">
+        Hello Bro!!
+    </div>
+</body>
+</html>

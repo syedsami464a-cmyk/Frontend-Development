@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            --primary-color:black;
+            --custom-width:500px; 
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(230, 230, 143);
+            border: 2px solid var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            height: 350px;
+            width: var(--custom-width);
+            border: 2px solid var(--primary-color);
+            overflow: hidden;
+            padding: 5px;
+            margin: 2px;
+            background-color: rgb(130, 239, 243);
+            /* box-shadow: 200px 10px brown; -> 200px - X-axis and 10px - Y-axis 
+            ex: for y-axis
+            box-shadow: 10px 200px brown; 
+            */
+            /* box-shadow: -10px 20px brown;
+            "-" -> (negative x-axis and y-axis) 
+            "+" -> (positive x-axis and y-axis)
+            */
+            /*
+            box-shadow: 0px 0px 5px brown;
+                  ((x ,y, blur, color))
+                  -ve doesn't make any sense
+             */
+            /*
+            box-shadow: 10px 10px 5px 50px brown;
+            box-shadow: 10px 10px 5px 50px rgba(1,1,1,0.4);
+            (x,y,blur,spreadness,color)
+            */
+            /*
+            box-shadow: inset 10px 10px 5px 50px brown; -> inset used for inside styling of box.
+            */
+            /* Multiple shadow */
+            box-shadow: 10px 10px brown ,15px 15px orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Shadow and custom variable Usage</h1>
+    <div class="container">
+        <div class="box">
+            <img src="Logo.jpg" alt="My logo" height="100px" width="100px">
+            <h1>Welcome to my bio</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure possimus fugiat delectus soluta suscipit inventore eaque, iste culpa blanditiis optio eius! Saepe nihil alias incidunt architecto. Aperiam voluptatum eius sequi?</p>
+        </div>
+    </div>
+</body>
+</html>

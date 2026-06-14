@@ -1,0 +1,265 @@
+:root{
+    --primary-color: #6366F1;
+    --accent-color: #3f83f8;
+    --text-color: #333333;
+    --link-color: #2563eb;
+    --background-color: #ffffff;
+    --light-gray: #f0f0f0;
+    --gray: #808080;
+    --dark-gray: #555;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:none;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: var(--background-color);
+}
+.header_container{
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.item1{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* ❌ Wrong: had nested selector .Main_logo img (but Main_logo itself is img)
+.Main_logo img{
+    border-radius:2px;
+    border: 2px solid black;
+}
+*/
+
+/* ✅ Correct: style Main_logo directly */
+.Main_logo{
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.567rem;
+}
+
+.item2{
+    display: none;
+    gap: 1rem;
+}
+
+@media (min-width:1030px){
+    .item2{
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.items{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #718096;
+}
+.items:hover{
+    color: var(--link-color);
+}
+
+.item3{
+    padding-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-btn{
+    display: none;
+    padding: 0.4rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    
+    /* ❌ Wrong: transform: all 0.1s; */
+    /* transform: all 0.1s; */
+
+    /* ✅ Correct: use transition */
+    transition: all 0.1s ease;
+}
+
+@media screen and (min-width: 1030px){
+    .contact-btn{
+        display: block;
+    }
+}
+.contact-btn:hover{
+    background-color: #5254f8;
+}
+
+.menu-button{
+    display: none;
+    border-radius: 30%;
+    height: 1.6rem;
+    width: 1.6rem;
+    border: 2px solid rgb(107, 102, 102);
+}
+.menu-button:hover{
+    background-color: #2563eb;
+}
+/* with screen only used for mobiles , laptops and tablets */
+/* without screen means it'll accept all media queries -> print(ctrl + p),speech(read aloud mode),screen*/
+@media screen and (max-width:1030px){
+    .menu-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.menu-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 2rem;
+    border-radius: 50%;
+}
+
+
+/* Hero Container */
+.Hero_section{
+    overflow: hidden;
+}
+.Hero_main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+.Hero_left{
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0; 
+}
+@keyframes slideFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width:1030px){
+    .Hero_main{
+        flex-direction: row;
+    }  
+    .Hero_left{
+        max-width: 50%;
+        
+        /* ❌ Wrong: kept align-items:center & text-align:center */
+        /* align-items:center; text-align:center; */
+
+        /* ✅ Correct: align left on big screens */
+        align-items: flex-start;
+        text-align: left;
+        justify-content: start;
+    }  
+    .Hero_header{
+        text-align: left;
+    }
+    .Hero_para2{
+        text-align: left;
+    }
+}
+.Hero_para1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+.Hero_header{
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+}
+.Hero_para2{
+    text-align: start;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+.btn-container{
+    margin: auto;
+    max-width: 100%;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start-button,
+.tour-button{
+    padding: 1rem 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+.tour-button{
+    background-color: var(--dark-gray);
+}
+.Hero_right{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    height: 60vh;
+}
+
+/* ❌ Wrong: image stretched without aspect ratio 
+.study_image{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
+*/
+
+/* ✅ Correct: maintain ratio with object-fit */
+.study_image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}

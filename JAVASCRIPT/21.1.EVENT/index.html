@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="btn" onclick="console.log(type)">Click Here</button> <!-- button -->
+    <button type="button" id="btn" onclick="console.log(id)">Click Here</button> <!-- btn -->
+    <button type="button" id="btn" onclick="console.log(event)">Click Here</button> <!-- MouseEvent object -> PointerEvent {isTrusted: true, pointerId: 3, width: 1, height: 1, pressure: 0, …} -->
+    <button type="button" id="btn" onclick="console.log(event.type)">Click Here</button> <!-- "click" -->
+    <button type="button" id="btn" onclick="console.log(event.target)">Click Here</button> <!-- <button> element -->
+    <button type="button" id="btn" onclick="console.log(this)">Click Here</button> <!-- <button> element -->
+
+</body>
+</html>

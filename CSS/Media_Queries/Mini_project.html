@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini_Projext</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: pink;
+    }
+    .container{
+        border: 2px solid black;
+        background-color: bisque;
+        display: flex;
+        flex-direction: row;
+        width: 450px;
+        padding: 2px;
+        margin: 10px;
+    }
+    #boxleft{
+        background-color: aquamarine;
+        width: 47%;
+        padding: 2px;
+        margin: 3px;
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        border: 2px solid red;
+        margin: 5px;
+    }
+    #boxright{
+        background-color: cornflowerblue;
+        border: 2px solid red;
+        width: 47%;
+        padding: 2px;
+        margin: 3px;
+    }
+    @media (max-width:500px){
+        .container{
+            flex-direction: column;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div id="boxright">
+            <img src="Logo.jpg" alt="My logo"width="170px">
+        </div>
+    </div>
+</body>
+</html>

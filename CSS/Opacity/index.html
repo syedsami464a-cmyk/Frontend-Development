@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opacity Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 10px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box1 {
+      background-color: red;
+      opacity: 1;   /* fully visible */
+    }
+
+    .box2 {
+      background-color: green;
+      opacity: 0.5; /* 50% transparent */
+    }
+
+    .box3 {
+      background-color: blue;
+      opacity: 0.2; /* very transparent */
+    }
+
+    .box4 {
+      background-color: purple;
+      opacity: 0;   /* completely invisible */
+    }
+
+    body {
+      background: url("https://www.w3schools.com/css/img_mountains.jpg") no-repeat center/cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1">Opacity 1</div>
+  <div class="box box2">Opacity 0.5</div>
+  <div class="box box3">Opacity 0.2</div>
+  <div class="box box4">Opacity 0</div>
+</body>
+</html>

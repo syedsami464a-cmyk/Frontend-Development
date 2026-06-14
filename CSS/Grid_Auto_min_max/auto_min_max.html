@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto_Min_Max</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: bisque;
+        padding: 2rem 2rem;
+        overflow: hidden;
+        display: grid;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        grid-template-columns: repeat(auto-fit,minmax(200px,400px));
+    }
+    .items{
+        background-color: blueviolet;
+        border: 2px solid black;
+        padding: 1.5rem 2rem;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items">A</div>
+        <div class="items">B</div>
+        <div class="items">C</div>
+        <div class="items">D</div>
+        <div class="items">E</div>
+        <div class="items">F</div>
+        <div class="items">G</div>
+        <div class="items">H</div>
+    </div>
+</body>
+</html>

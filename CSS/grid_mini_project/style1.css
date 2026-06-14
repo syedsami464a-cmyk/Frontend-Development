@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: monospace;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+.container{
+    max-width: 80vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.header_container{
+    margin-bottom: 2rem;
+}
+.header_title{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+.header_desc{
+    text-align: center;
+    color: rgb(88,88,88);
+}
+.main_container{
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: repeat(4,1fr);
+    /*grid-template-rows: repeat(2,1fr); -> by using one by one overlaps each other ->run it <- to know clearly about it */
+}
+.card_container{
+    /*no height or width is to be placed here*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;/*makes no overflow when screen consized */
+    margin: 0 auto;
+    /*grid-template-columns: repeat(4,fr);*/
+    border: 2px solid rgb(153, 147, 147);
+    background-color: rgb(121, 122, 80);
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+
+    
+}
+.card_container:hover{
+    box-shadow: 1px 1px 10px 5px blue;
+}
+.image_container{
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+.image_container:hover .image1{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}   
+.image1{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.gadget_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 0.5rem;    
+}
+.gadget_desc{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.gadget_title{
+    font-size: 1.5rem;
+    color: bisque;
+}
+.gadget_title:hover {
+    color: rgb(195, 36, 153);
+}
+.gadget_para{
+    font-size: 1.1rem;
+    color: rgb(211, 212, 214);
+}
+.author_footer_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+}
+.footer_left{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+.image2{
+    height: 35px;
+    width: 35px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.image2:hover{
+    background-color: blue;
+}
+.image2 img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.author_name{
+    color: rgba(19, 217, 187, 0.771);
+}
+.footer_right{
+    border: 1px solid black;
+    padding: 4px;
+}
+.footer_right:hover{
+    border: 1px solid aqua;
+}
+.footer_right_para{
+    font-weight: 600;
+    color: white;
+}
+.footer_right_para:hover{
+    color: aqua;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: beige;
+            border: 5px solid black;
+        }
+        .box{
+            
+            width: 350px;
+            height: 80px;
+            background-color: rgb(90, 90, 246);
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid red;
+            /* to make changes in top,left,right,bottom => Position:relative is used*/
+            position: relative; 
+            animation-name: rightMovement;
+            animation-duration: 2s; /* time taken to complete the iteration */
+            animation-iteration-count: 1; /* Total no of iterations */
+            animation-delay: 2s; /* delays at staring of 2s */
+            animation-timing-function: linear; /* linearly moves in both direction */
+            animation-timing-function: ease-in; /* starting slow but endibng fast */
+            animation-timing-function: ease-out;/*starting fadt but ending is too slow */
+            animation-timing-function: ease-in-out;/*starts and ends slowly in middle speedup*/
+            animation-timing-function: linear;
+            animation-fill-mode: backwards; /* stops after moves towards backward */
+            animation-fill-mode: forwards; /* stops after moves towards forward */
+
+            /* to make move in both directions from left to right an dvice versa then use this ->
+            */
+            animation-direction: alternate;
+
+                             /* ShortHand Notation*/
+
+            /* @keyframes duration | easing-function | delay |
+    iteration-count | direction | fill-mode | play-state | name */
+    animation: 3s linear 1s infinite alternate none running rightMovement;
+            
+
+
+            
+        }
+
+        @keyframes rightMovement {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 900px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box">
+            
+        </div>
+    </div>
+</body>
+</html>

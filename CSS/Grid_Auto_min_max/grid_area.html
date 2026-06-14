@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Area</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        /*
+        height:100%;
+        width:100%
+        */
+        background-color: rgb(202, 106, 175);
+        padding: 1rem 2rem;
+        display: grid;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        grid-template-areas: 
+            "item1 item1 item1"
+            "item2 item3 item3"
+            "item2 item4 item5"
+            "item6 item6 item6"
+        ;
+    }
+    .item{
+        background-color: rgb(157, 218, 96);
+        border: 2px solid black;
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #item1{
+        grid-area: item1;
+    }
+    #item2{
+        grid-area: item2;
+    }
+    #item3{
+        grid-area: item3;
+    }
+    #item4{
+        grid-area: item4;
+    }
+    #item5{
+        grid-area: item5;
+    }
+    #item6{
+        grid-area: item6;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="item1">Header</div>
+        <div class="item" id="item2">Side_Bar</div>
+        <div class="item" id="item3">Content</div>
+        <div class="item" id="item4">Content-1</div>
+        <div class="item" id="item5">Content-2</div>
+        <div class="item" id="item6">Footer</div>
+    </div>
+</body>
+</html>
